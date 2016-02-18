@@ -7,7 +7,7 @@ DogeDodge.Play = function () {};
 DogeDodge.Play.prototype = {
 
   init: function () {
-    console.log("%c~~~ Booting the DogeDodge ~~~\n Compliments of Skilstak", "color:#fdf6e3; background:#073642"); 
+    console.log("%c~~~ Booting the DogeDodge ~~~\n Compliments of Skilstak", "color:#0000FF; background:#900009"); 
   },
 
   preload: function () {
