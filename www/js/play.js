@@ -60,6 +60,7 @@ DogeDodge.Play.prototype = {
     }
     if (this.dodge.y >568) {
       this.dodge.y = 10;
+      
 
       
       
