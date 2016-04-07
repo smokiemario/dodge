@@ -19,7 +19,7 @@ DogeDodge.Play.prototype = {
     console.log("preloading dodger(player)")
     this.load.spritesheet('dodger','assets/player.png',64,64,3)
     console.log("preloading obstacle")
-    this.load.spritesheet('dodge','assets/dodge.png',64,64,1)
+    this.load.spritesheet('dodge','assets/dodge.png',32,32,1)
   },
 
   create: function () {
