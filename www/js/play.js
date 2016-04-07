@@ -27,7 +27,7 @@ DogeDodge.Play.prototype = {
   
 
     console.log("creating background...");
-    this.background = this.add.tileSprite(0,0,320,568,"background");
+    this.background = this.add.tileSprite(0,0,328,568,"background");
     this.background.autoScroll(-50,50);
     this.background.scale.set(1);
     
