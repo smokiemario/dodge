@@ -73,6 +73,6 @@ DogeDodge.Play.prototype = {
   handleCollision: function() {
     console.log("OUCH!");
     game.state.start('play')
-  },
+  }
   };
 };
