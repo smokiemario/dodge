@@ -52,7 +52,7 @@ DogeDodge.Play.prototype = {
 
   
 
-  },
+
 
   update: function () {
     game.physics.arcade.collide(this.dodge,this.dodger,this.handleCollision);
@@ -70,8 +70,9 @@ DogeDodge.Play.prototype = {
       
    
     },
-   handleCollision: function() {
+  handleCollision: function() {
     console.log("OUCH!");
     game.state.start('play')
+  },
   };
 };
