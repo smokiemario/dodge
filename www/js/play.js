@@ -50,7 +50,14 @@ DogeDodge.Play.prototype = {
     this.dodger.body.drag.setTo(600)
   },
 
+  handleCollision: function() {
+    console.log("OUCH!");
+    game.state.start('play')
+
+  },
+
   update: function () {
+    game.physics.arcade.collide(this.dodge,this.dodger,this.handleCollision);
     this.dodge.y += this.speed
     if (this.cursors.left.isDown) {
       this.dodger.body.gravity.x = -1200;
@@ -60,28 +67,8 @@ DogeDodge.Play.prototype = {
     }
     if (this.dodge.y >568) {
       this.dodge.y = 10;
-      
-
-      
-      
-      
-      
-    
-      
-      
-    
-      
       this.dodge.x = game.rnd.integerInRange(0,320)
       this.dodge.body.velocity.y = 1
-      
-      
-      
     }
-    game.physics.arcade.collide(this.dodge,this.dodger,this.handleCollision);  
   },
-  handleCollision: function() {
-    console.log("OUCH!")
-    game.state.start('play')
-
-  }
 }
