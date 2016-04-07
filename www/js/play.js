@@ -50,9 +50,7 @@ DogeDodge.Play.prototype = {
     this.dodger.body.drag.setTo(600)
   },
 
-  handleCollision: function() {
-    console.log("OUCH!");
-    game.state.start('play')
+  
 
   },
 
@@ -69,6 +67,10 @@ DogeDodge.Play.prototype = {
       this.dodge.y = 10;
       this.dodge.x = game.rnd.integerInRange(0,320)
       this.dodge.body.velocity.y = 1
+      
+    handleCollision: function() {
+    console.log("OUCH!");
+    game.state.start('play')
     }
   },
 }
