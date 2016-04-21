@@ -45,7 +45,7 @@ DogeDodge.Play.prototype = {
     this.dodge.anchor.set(0.5,0.5);
     console.log("Success! : use arrow keys to move")
     game.physics.arcade.enable(this.dodge);
-    this.dodge.body.gravity.y = 500;
+    this.dodge.body.gravity.y = 250;
     this.dodger.body.bounce.setTo(0.5,0.5);
     this.dodger.body.drag.setTo(600);
   },
